@@ -1,8 +1,0 @@
-Acme\BlogBundle\Entity\Author:
-    properties:
-        name:
-            - NotBlank:
-                message: "the name shoud not be blank"
-        email:
-            - Email:
-                message: "'{{ value }}' is not a valid email."
