@@ -1,0 +1,10 @@
+parameters:
+    app_rest.user.handler.class:   App\RestBundle\Handler\UserHandler
+    app_rest.user.class:           App\RestBundle\Entity\User
+
+
+services:
+
+    app_rest.user.handler:
+        class:      %app_rest.user.handler.class%
+        arguments:  [@doctrine.orm.entity_manager, %app_rest.user.class%,@form.factory]

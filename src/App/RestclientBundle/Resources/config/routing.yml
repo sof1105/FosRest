@@ -1,0 +1,3 @@
+app_restclient_homepage:
+    path:     /
+    defaults: { _controller: AppRestclientBundle:Default:index }
